@@ -1,0 +1,10 @@
+type Query {
+    usuarios: [Usuario]
+    
+    livros: [Livro]
+    filtrarLivros(filtro: LivroFiltro): [Livro]
+
+    autores: [Autor]
+
+    generos: [Genero]
+}

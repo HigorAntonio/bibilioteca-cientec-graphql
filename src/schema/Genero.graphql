@@ -1,0 +1,9 @@
+type Genero {
+  id: Int!
+  nome: String!
+  livros: [Livro]
+}
+
+input GeneroInput {
+  nome: String!
+}

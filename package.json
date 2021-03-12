@@ -1,0 +1,26 @@
+{
+  "name": "Biblioteca_Cientec_GraphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ext js,graphql src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.9.16",
+    "bcrypt": "^3.0.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-import": "^0.7.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "redis": "^2.8.0",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}

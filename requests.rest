@@ -1,0 +1,64 @@
+                                                      # USUARIOS
+POST http://localhost:3333/registrar
+Content-Type: application/json
+
+{
+  "nome": "Higor Antonio",
+  "email": "higorantonio.ha@gmail.com",
+  "senha": "12345"
+}
+
+###
+
+GET http://localhost:3333/usuarios
+
+###
+
+POST http://localhost:3333/autenticar
+Content-Type: application/json
+
+{
+  "email": "higorantonio.ha@gmail.com",
+  "senha": "12345"
+}
+
+###
+
+POST http://localhost:3333/token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTc2MDI0NTgyfQ.0UfN1qg4EaiWMAsExJZzj4wShs96fUd4RL2GSqYS2VM"
+}
+
+###
+
+DELETE http://localhost:3333/sair
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTc2MDI0NTgyfQ.0UfN1qg4EaiWMAsExJZzj4wShs96fUd4RL2GSqYS2VM"
+}
+
+###
+                                                      # LIVROS
+
+POST http://localhost:3333/livros
+Content-Type: application/json
+
+{
+  "isbn": "13434234234234",
+  "titulo": "Nome do livro", 
+  "titulo_original": "Nome original", 
+  "edicao": "1",
+  "editora": "Editora teste", 
+  "url_imagem": "http://url.imagemDeCapa.com", 
+  "descricao": "Descrição do livro", 
+  "numero_de_paginas": 123, 
+  "idioma": "Português"
+}
+
+###
+
+GET http://localhost:3333/livros
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTc2MDE5NTgyLCJleHAiOjE1NzYwMTk2MDJ9.Fpq7tZ5-CM2mnJuwfHO2hiln_Bk2VU4szGRTKPPBGmQ

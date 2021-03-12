@@ -1,0 +1,15 @@
+type Autor {
+  id: Int!
+  nome: String!
+  descricao: String
+  livros: [Livro]
+}
+
+input AutorInput {
+  nome: String!
+  descricao: String
+}
+
+input AutorFiltro {
+  nome: String
+}

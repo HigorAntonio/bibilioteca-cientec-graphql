@@ -1,0 +1,7 @@
+type Mutation {
+  novoLivro(dadosLivro: LivroInput, dadosAutor: [AutorInput], dadosGenero: [GeneroInput]): Livro!
+
+  novoAutor(dados: AutorInput): Autor!
+
+  novoGenero(dados: GeneroInput): Genero!
+}

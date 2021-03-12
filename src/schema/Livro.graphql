@@ -1,0 +1,38 @@
+type Livro {
+  id: Int
+  isbn: String
+  titulo: String!
+  titulo_original: String!
+  edicao: String
+  editora: String
+  url_imagem: String!
+  descricao: String!
+  numero_de_paginas: Int!
+  idioma: String!
+  autores: [Autor]
+  generos: [Genero]
+  reviews: [Review]
+  emprestimos: [Emprestimo]
+}
+
+input LivroInput {
+  isbn: String
+  titulo: String!
+  titulo_original: String!
+  edicao: String
+  editora: String
+  url_imagem: String!
+  descricao: String!
+  numero_de_paginas: Int!
+  idioma: String!
+}
+
+input LivroFiltro {
+  isbn: String
+  titulo: String
+  titulo_original: String
+  editora: String
+  idioma: String
+  autor: String
+  genero: String
+}

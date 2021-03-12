@@ -1,0 +1,7 @@
+type Emprestimo {
+  id: Int!
+  usuario_id: Int!
+  livro_id: Int!
+  previsao_de_entrega: String!
+  entregue_em: String
+}

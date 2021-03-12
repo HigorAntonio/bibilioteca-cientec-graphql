@@ -1,0 +1,6 @@
+type Review {
+  usuario_id: Int!
+  livro_id: Int!
+  review_do_usuario: String
+  nota: Int!
+}
